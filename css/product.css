@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo 2", sans-serif;
+  font-optical-sizing: auto; 
+  font-style: normal;
+}
+
+.header{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.inside-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.inside-header img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+    
+}
+
+.inside-header h1{
+    margin-top: 30px;
+    font-weight: 950;
+    font-size: 4rem;
+    color: #906EB2;
+    margin-left: -10px;
+}
+
+#terbaik{
+    color: #FFB661;
+    font-weight: 700;
+}
+
+#unforgettable{
+    color: #906EB2;
+    font-weight: 700;
+}
+
+.main{
+    position: relative;
+}
+
+#backdrop{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.product-section{
+    display: flex;
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.product-section h3{
+    color: #906EB2;
+    font-size: 30px;
+    font-weight: 700;
+}
+.product-list{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F0FF;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.product-list h3{
+    text-align: center;
+}
+
+.product-list button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 60px;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    border-style: none;
+    font-size: 20px;
+    
+}
+
+.product-card-img{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.card , .text-bg-dark{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    border-style: none;
+}
+
+
+.card-img-overlay{
+    background-color: rgba(0, 0, 0, 0.211);
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.card-text{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
