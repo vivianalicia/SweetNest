@@ -12,3 +12,31 @@
 .navbar li{
     padding: 5px;
 }
+.hero-section{
+   background: linear-gradient(to bottom, #f4e9ff, #ffffff);
+}
+.btn-hero{
+    background-color: #906eb2;  
+    color: white;               
+    border: none;
+    border-radius: 0;
+    padding: 10px 20px;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);            
+    font-size: 16px;     
+}
+.btn-hero:hover{
+    text-decoration: underline;
+}
+.hero-title-1{
+    color: #906eb2;
+}
+.hero-title-2{
+    color: #f3b4b0;
+}
+.hero-title-1, .hero-title-2{
+    display: inline;
+}
+.elemen-1{
+    left:19%;
+    bottom:50%;
+}
