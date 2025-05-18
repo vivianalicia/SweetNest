@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo 2", sans-serif;
+    font-optical-sizing: auto; 
+    font-style: normal;
+}
+
+.product-detail{
+    margin: 20px;
+}
+
+.product-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.product-content img{
+    width: 500px;
+    height: 500px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+#woman-bdcake{
+    width: 400px;
+    
+}
+
+#highlited-lavender{
+    color: #906EB2;
+}
+
+
+
+.product-detail h1{
+    font-weight: 950;
+}
+
+.product-desc{
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.product-desc p{
+    font-size: 40px;
+    color: #906EB2;
+    text-align: justify;
+}
+
+.product-content-2{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.button-overlay {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.button-overlay h4 a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    z-index: 2;
+}
+
+.button-overlay img {
+    display: block;
+    width: 300px;
+}
+
+.price{
+    color: #906EB2;
+}
+
+.product-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px
+
+}
+.product-images-container{
+    display: flex;
+    justify-content: center;
+}
+.product-images-container img{
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+    margin-left:40px;
+    margin-right: 70px;
+    border-radius: 20px;
+
+}
+

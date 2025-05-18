@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo 2", sans-serif;
+  font-optical-sizing: auto; 
+  font-style: normal;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.inside-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.inside-header img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+    
+}
+
+.inside-header h1{
+    margin-top: 30px;
+    font-weight: 950;
+    font-size: 4rem;
+    color: #906EB2;
+    margin-left: -10px;
+}
+
+#sesungguhnya{
+    color: #FFB661;
+    font-weight: 700;
+}
+
+#dirimu{
+    color: #906EB2;
+    font-weight: 700;
+}
+
+.profile-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profile-img img{
+    margin-left: 20px;
+    margin-right: 70px;
+}
+
+#profile-pict{
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+}
+.profile-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-content h1 {
+    font-size: 3rem;
+    font-weight: 950;
+    color: #906EB2;
+}
