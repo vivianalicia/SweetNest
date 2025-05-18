@@ -1,0 +1,25 @@
+.logo{
+    width: 50px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo 2", sans-serif;
+    font-optical-sizing: auto; 
+    font-style: normal;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.basket, .profile{
+    width: 30px;
+    height: 30px;
+}
+.basket img, .profile img{
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    background-color: #f4e9ff;
+}
