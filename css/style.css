@@ -55,5 +55,9 @@
     height: 100%;
 }
 .main-content .col-sm-4 img{
-    height: 250px;
+    height: 200px;
+}
+.btn-primary{
+    background-color: #906eb2 !important;
+    border: none !important;
 }
