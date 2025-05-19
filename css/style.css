@@ -40,3 +40,20 @@
     left:19%;
     bottom:50%;
 }
+.hero-2-title{
+    color: #906eb2;
+}
+.hero-2-desc{
+    color: #906eb2;
+}
+.overlay{
+    position: absolute;
+    z-index: -1;
+}
+.overlay img{
+    width: 100%;
+    height: 100%;
+}
+.main-content .col-sm-4 img{
+    height: 250px;
+}
