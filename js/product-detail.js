@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const productData = {
          "pandan-bloom-basket": {
             name: "Pandan Bloom Basket",
-            price: "Rp. 350.000",
+            price: "Rp. 300.000",
             description: "Dibalut aroma pandan yang harum dan tekstur bolu yang lembut, setiap potong dari Pandan Bloom Basket seakan membawa pulang kenangan masa kecil. Keju premium yang meleleh di atasnya menambah kesan hangat dan mendalam—sebuah persembahan manis untuk orang tersayang yang pantas mendapatkan yang terbaik.",
             images: [
         "../assets/ProductAssets/Hampers 1.png",
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         "fusion-treat": {
             name: "Fusion Treats",
-            price: "Rp. 350.000",
+            price: "Rp. 400.000",
             description: "Seperti dua hati yang saling melengkapi, Fusion Treat menyatukan dua rasa yang berbeda namun harmonis: cheesecake klasik yang lembut dan cheesecake cokelat yang menggoda. Sajian ini bukan hanya sekadar manis, tapi juga metafora dari cinta yang menyatu dalam perbedaan.",
             images: [
         "../assets/ProductAssets/Hampers 3.png",
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         "sweet-heart-box": {
             name: "Sweet Heart Box",
-            price: "Rp. 250.000",
+            price: "Rp. 400.000",
             description: "Sweet Heart Box adalah wujud cinta dalam bentuk sederhana namun penuh makna. Bolu pandan lembut dalam porsi melimpah disajikan dalam kotak elegan—sempurna untuk mereka yang ingin mengungkapkan kasih sayang lewat manisnya perhatian.",
             images: [
         "../assets/ProductAssets/Hampers 5.png",
