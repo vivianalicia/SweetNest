@@ -17,12 +17,14 @@
     
 }
 
-.product-content img{
-    width: 500px;
-    height: 500px;
+
+#product-image{
+    width: 450px;
+    height: 450px;
     margin-right: 20px;
     border-radius: 20px;
 }
+
 
 #woman-bdcake{
     width: 400px;
@@ -87,6 +89,12 @@
     margin-top: 20px
 
 }
+
+.product-content-image{
+    width: 400px;
+    height: 400px;
+}
+
 .product-images-container{
     display: flex;
     justify-content: center;
@@ -101,3 +109,91 @@
 
 }
 
+@media (max-width: 991px) {
+    .product-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #product-image,
+    #woman-bdcake {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .product-desc {
+        margin: 20px;
+    }
+
+    .product-desc p {
+        font-size: 28px;
+    }
+
+    .product-content-2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .button-overlay img {
+        width: 250px;
+    }
+
+    .product-images-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .product-images-container img {
+        width: 300px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-desc p {
+        font-size: 20px;
+    }
+
+    #product-name,
+    .product-images h1,
+    .price {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .button-overlay img {
+        width: 200px;
+    }
+
+    .product-images-container img {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .header {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .inside-header {
+        
+        align-items: center;
+        
+    }
+
+    .inside-header img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .basket img,
+    .profile img {
+        width: 30px;
+        height: auto;
+    }
+}
