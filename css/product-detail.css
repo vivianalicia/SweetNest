@@ -17,12 +17,14 @@
     
 }
 
-.product-content img{
-    width: 500px;
-    height: 500px;
+
+#product-image{
+    width: 450px;
+    height: 450px;
     margin-right: 20px;
     border-radius: 20px;
 }
+
 
 #woman-bdcake{
     width: 400px;
@@ -45,7 +47,7 @@
     margin-right: 20px;
 }
 .product-desc p{
-    font-size: 40px;
+    font-size: 32px;
     color: #906EB2;
     text-align: justify;
 }
@@ -87,6 +89,12 @@
     margin-top: 20px
 
 }
+
+.product-content-image{
+    width: 400px;
+    height: 400px;
+}
+
 .product-images-container{
     display: flex;
     justify-content: center;
@@ -101,3 +109,75 @@
 
 }
 
+@media (max-width: 1200px) {
+    .product-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    #product-image {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        margin: 10px 0;
+    }
+    #woman-bdcake {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .product-desc {
+        margin: 20px;
+    }
+    .product-desc p {
+        font-size: 32px;
+    }
+    .product-content-2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .button-overlay img {
+        width: 250px;
+    }
+
+    .button-overlay a{
+        font-size: 16px;
+    }
+
+    .product-images-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .product-images-container img {
+        width: 300px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .product-desc p {
+        font-size: 24px;
+    }
+    #product-name,
+    .product-images h1,
+    .price {
+        font-size: 24px;
+        text-align: center;
+    }
+    .button-overlay img {
+        width: 200px;
+    }
+
+    .button-overlay a{
+        font-size: 16px;
+    }
+    .product-images-container img {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+}

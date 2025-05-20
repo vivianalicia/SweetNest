@@ -23,3 +23,10 @@
 .navbar{
     background-color: #f4e9ff;
 }
+.navbar li:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.navbar li{
+    padding: 5px;
+}
