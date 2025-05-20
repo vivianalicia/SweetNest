@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="/css/registration.css">
-     <script src="registration.js"></script>
 </head>
 <body>
 
@@ -23,11 +22,11 @@
              <div class="form-registration">
                 <form action="html/login.html" method="post">
                  <label for="username">Username: </label> 
-                    <input type="text" name="username" id="username" placeholder="username" required>
+                    <input type="text" name="username" id="username" placeholder="username">
                  <br>
 
                  <label for="email">Email: </label>
-                    <input type="email" name="email" id="email" placeholder="juanda@gmail.com">
+                    <input type="text" name="email" id="textmail" placeholder="juanda@gmail.com">
                  <br>
 
                  <label for="password">Password: </label>
@@ -39,8 +38,8 @@
                  <br>
 
                  <div class="inlining">
-                    Gender: <input type="radio" name="Gender" id="male"> <label for="Gender">Male</label> 
-                    <input type="radio" name="Gender" id="female"> <label for="Gender">Female</label>
+                    Gender: <input type="radio" name="Gender" id="male"> <label for="Male">Male</label> 
+                    <input type="radio" name="Gender" id="female"> <label for="Female">Female</label>
                 </div>
                 <br>
 
@@ -48,7 +47,7 @@
                 <div class="inlining2">
                     <input type="checkbox" name="terms" id="terms"> <label for="terms">Accept Terms and Condition</label>
                 </div>
-                    <button type="button" onclick="validateForm()">Submit</button>
+                    <button type="submit" onclick="validateForm()">Submit</button>
                 <br>
 
                 </form>

@@ -2,7 +2,7 @@
 function validateForm(){
 
     let username=document.getElementById("username").value 
-    let email=document.getElementById("email").value
+    let email=document.getElementById("textmail").value
     let password=document.getElementById("password").value
     let cpassword=document.getElementById("cpassword").value
     let female=document.getElementById("female")
@@ -24,9 +24,10 @@ function validateForm(){
    }
    else{
     alert("form sucessfully submitted")
+   document.querySelector("form").submit()
+
    }
    //buat submit formnya
-   document.querySelector("form").submit()
 }
 
 function isAlphaNumeric (str){
