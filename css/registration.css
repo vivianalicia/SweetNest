@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo 2", sans-serif;
+    font-optical-sizing: auto; 
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+.registration-page{
+width: 100vw;
+height: 100vh;
+display: flex;
+}
+
+.registration-div{
+position: relative;
+width: 35vw;
+height: 100%;
+background: linear-gradient(to bottom, #f4e9ff, white);
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 50px;
+}
+
+/*Form*/
+.registration-div{
+position: relative;
+box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.form-registration{
+box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+padding: 10px;
+padding-bottom: 60px;
+border-radius: 10px;
+}
+
+.form-registration label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-registration input[type="text"],
+.form-registration input[type="email"],
+.form-registration input[type="password"] {
+  width: 25vw !important;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+
+}
+
+.form-registration input[type="text"]:focus,
+.form-registration input[type="email"]:focus,
+.form-registration input[type="password"]:focus {
+  border-color: #9c6fb0;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(156, 111, 176, 0.2);
+}
+
+.form-registration input[type="radio"],
+.form-registration input[type="checkbox"] {
+  margin-right: 8px;
+  accent-color: #9c6fb0;
+  margin-bottom: 5px;
+}
+
+.form-registration button {
+  background-color: #9c6fb0;
+  width: 10vw;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 10px;
+  position: absolute;
+  left: 30%;
+}
+
+.form-registration button:hover {
+  background-color: #8a5a9e;
+}
+
+.inlining{
+display: flex;
+width: 100%;
+gap: 15px;
+}
+
+.inlining2{
+display: flex;
+width: 100%;
+gap: 10px;
+}
+
+
+
