@@ -63,12 +63,12 @@ html{
 }
 
 #backdrop{
-    
     width: 100%;
+    height: fit-content;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: -1;
 }
 
 .product-section{
@@ -77,6 +77,8 @@ html{
     z-index: 2;
     justify-content: center;
     margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .product-section h3{
@@ -85,13 +87,11 @@ html{
     font-weight: 700;
 }
 .product-list{
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: #F7F0FF;
-    padding: 30px;
+    padding: 20px;
     border-radius: 25px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -130,6 +130,7 @@ html{
     height: 300px;
     border-radius: 20px;
     border-style: none;
+
 }
 
 .card , .text-bg-dark{
@@ -142,12 +143,13 @@ html{
 
 .card-img-overlay{
     background-color: rgba(0, 0, 0, 0.211);
-    height: 300px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column-reverse;
     border-radius: 20px;
     border-style: none;
+    position: absolute;
 }
 
 .card-text{
