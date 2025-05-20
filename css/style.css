@@ -22,7 +22,7 @@
     border-radius: 0;
     padding: 10px 20px;
     box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);            
-    font-size: 16px;     
+    font-size: 28px;     
 }
 .btn-hero:hover{
     text-decoration: underline;
@@ -60,4 +60,30 @@
 .btn-primary{
     background-color: #906eb2 !important;
     border: none !important;
+}
+.card-img-top{
+    height: 12rem;
+}
+.more-detail{
+    color: rgb(209, 209, 209);
+}
+#mySimpleCarousel {
+  position: relative; /* Penting agar tombol posisinya relatif ke carousel */
+}
+.carousel-button-group{
+    position: absolute;
+    bottom: 155%;
+    left: 85%;
+}
+.custom-carousel-btn{
+    background-color: #f4e9ff;
+    border: none;
+}
+.carousel-item{
+    height: 50vh !important;
+}
+.line{
+    background-color: black;
+    width: 100%;
+    height: 1px;    
 }

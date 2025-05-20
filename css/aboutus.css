@@ -133,13 +133,14 @@ ul {
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin-bottom: 15px;
     color:  #8e44ad;
+    font-weight: 950;
 }
 
 .hero-content p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color:  #8e44ad;
 }
 
@@ -167,6 +168,7 @@ margin-bottom: 40px;
     padding: 10px;
     background-color: rgba(200, 100, 255, 0.1);
     border-radius: 20px;
+    font-weight: 950;
 }
 
 .sweetnest-emoji-separator {
@@ -372,6 +374,14 @@ object-fit: cover;
 .team-photo {
     height: 200px;
     background-color: #ddd;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.team-photo img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .team-info {
@@ -455,27 +465,31 @@ font-size: 1.2rem;
     flex-wrap: wrap;
 }
 
-.btn {
+.btn-shop{
     padding: 12px 30px;
     border-radius: 30px;
     font-weight: 600;
     transition: all 0.3s;
     display: inline-block;
-}
-
-.btn-primary {
-    background-color: black;
-    color: white;
+    color: #8e44ad;
+    background-color: white;
 }
 
 .btn-secondary {
     background-color: #fff;
-    color: #9c6fb0;
+    color: #8e44ad;
+    
 }
 
 .btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-shop .btnsecondary{
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 

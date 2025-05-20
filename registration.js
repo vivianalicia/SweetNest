@@ -1,9 +1,7 @@
-//Validation username ga kosong dan lebih dari 4 karakter, gmail harus @gmail.com, password harus alphanumeric, password == confirm password, gender pilih satu gbs kosong, terms condiiton harus centang
 
-
-//kalau kita taro .value ketika define variablenya dibawahnya pas if dkk udah gaperu lagi karena nanti jadi undefined
 function validateForm(){
-    let username=document.getElementById("username").value //atau habis define pake username.value
+
+    let username=document.getElementById("username").value 
     let email=document.getElementById("email").value
     let password=document.getElementById("password").value
     let cpassword=document.getElementById("cpassword").value
@@ -34,7 +32,6 @@ function validateForm(){
 function isAlphaNumeric (str){
     let isAlpha=false
     let isNumeric=false
-    //kita mau iterasi semua letter di string, kalau ada yang number berarti isNumeric true dan kalau bukan number berarti isAlpha true
 
     for(let i=0;i<str.length;i++){
         if(isNaN(str[i])){
@@ -51,3 +48,7 @@ function isAlphaNumeric (str){
     }
     return false
 }
+
+
+
+
