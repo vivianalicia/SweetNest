@@ -27,7 +27,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-sm-0 mx-auto">
                     <li class="nav-item"> <a class="nav-link active" aria-current="page" href="">Home</a> </li>
                     <li class="nav-item"> <a class="nav-link active" href="./html/product.html">Product</a> </li>
-                    <li class="nav-item"> <a class="nav-link active" href="./html/about-us.html"
+                    <li class="nav-item"> <a class="nav-link active" href="./html/aboutus.html"
                             aria-disabled="true">About Us</a> </li>
                     <li class="nav-item"> <a class="nav-link active" href="./html/messages.html"
                             aria-disabled="true">Messages</a> </li>
@@ -190,24 +190,90 @@
                 </div>
                 <div>
                     <img src="./assets/Home/quote.svg" style="width: 5rem" alt="">
-                    <div class="row mt-3 carousel-slide" id="carouselExampleIndicators">
-                        <div>
-                             <div class="col-sm-8 align-self-center">
-                            <p class="fs-5">Terima kasih SweetNest! Pacarku benar-benar terharu saat menerima ‘Romantic Getaway Kit’. Semua
-                            isinya elegan dan berkualitas. Pasti bakal order lagi untuk anniversary nanti!</p>
-                            <h4>Dina, Jakarta</h4>
+                    <div class="mt-3 carousel slide" id="mySimpleCarousel" data-bs-ride="carousel">
+
+                        <div class="carousel-button-group">
+                            <button class="custom-carousel-btn me-2" type="button" data-bs-target="#mySimpleCarousel"
+                                data-bs-slide="prev">
+                                <img src="./assets/Home/left.svg" alt="Prev">
+                            </button>
+                            <button class="custom-carousel-btn" type="button" data-bs-target="#mySimpleCarousel"
+                                data-bs-slide="next">
+                                <img src="./assets/Home/right.svg" alt="Next">
+                            </button>
+                        </div>
+                        <div class="carousel-inner w-100">
+                            <div class="carousel-item active">
+                                <div class="row px-2 py-3">
+                                    <div class="col-sm-8 align-self-center">
+                                        <p class="fs-5">Terima kasih SweetNest! Pacarku benar-benar terharu saat
+                                            menerima
+                                            ‘SweetHeartBox’. Semua isinya elegan dan berkualitas. Pasti bakal order lagi
+                                            untuk anniversary nanti!
+                                        </p>
+                                        <h4>Dina, Jakarta</h4>
+                                    </div>
+                                    <div class="col-sm-4 d-flex justify-content-center">
+                                        <img class="w-75" src="./assets/Home/testi-1.png" alt="">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-sm-4 d-flex justify-content-center">
-                                <img class="w-75" src="./assets/Home/testi-1.png" alt="">
-                            </div> 
+                            <div class="carousel-item">
+                                <div class="row px-2 py-3">
+                                    <div class="col-sm-8 align-self-center">
+                                        <p class="fs-5">"Anak saya senang banget dengan Cookie Stack Suitcase! Mainannya
+                                            edukatif dan camilannya sehat, jadi saya juga tenang. Pengirimannya juga
+                                            cepat, sesuai janji. Top banget SweetNest!"</p>
+                                        <h4>Rudi, Bekasi</h4>
+                                    </div>
+                                    <div class="col-sm-4 d-flex justify-content-center">
+                                        <img class="w-75" src="./assets/Home/testi-2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row px-2 py-3">
+                                    <div class="col-sm-8 align-self-center">
+                                        <p class="fs-5">"Saya pesan ‘Lebaran Blessing Hamper’ untuk orang tua di
+                                            kampung, dan mereka suka sekali. Katanya kuenya enak dan kemasannya cantik.
+                                            SweetNest selalu jadi andalan untuk momen spesial keluarga kami."</p>
+                                        <h4>Maya, Bandung</h4>
+                                    </div>
+                                    <div class="col-sm-4 d-flex justify-content-center">
+                                        <img class="w-75" src="./assets/Home/testi-2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="line">
+                </div>
             </div>
-
         </div>
     </main>
 </body>
+<footer>
+    <div class="container-sm">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-5 border-top">
+            <div class="col-md-4 d-flex align-items-center"> <a href="/"
+                    class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap"> <svg
+                        class="bi" width="30" height="24" aria-hidden="true">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg> </a> <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Company, Inc</span> </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Instagram"><svg class="bi"
+                            width="24" height="24" aria-hidden="true">
+                            <use xlink:href="#instagram"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Facebook"><svg class="bi"
+                            width="24" height="24">
+                            <use xlink:href="#facebook"></use>
+                        </svg></a></li>
+            </ul>
+        </footer>
+    </div>
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
     crossorigin="anonymous"></script>

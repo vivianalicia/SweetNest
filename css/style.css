@@ -67,3 +67,23 @@
 .more-detail{
     color: rgb(209, 209, 209);
 }
+#mySimpleCarousel {
+  position: relative; /* Penting agar tombol posisinya relatif ke carousel */
+}
+.carousel-button-group{
+    position: absolute;
+    bottom: 155%;
+    left: 85%;
+}
+.custom-carousel-btn{
+    background-color: #f4e9ff;
+    border: none;
+}
+.carousel-item{
+    height: 50vh !important;
+}
+.line{
+    background-color: black;
+    width: 100%;
+    height: 1px;    
+}
