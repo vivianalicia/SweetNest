@@ -47,7 +47,7 @@
     margin-right: 20px;
 }
 .product-desc p{
-    font-size: 40px;
+    font-size: 32px;
     color: #906EB2;
     text-align: justify;
 }
@@ -145,7 +145,7 @@
     .button-overlay a{
         font-size: 16px;
     }
-    
+
     .product-images-container {
         flex-wrap: wrap;
         gap: 20px;
