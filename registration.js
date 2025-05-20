@@ -1,54 +1,68 @@
+function validateForm() {
+    let username = document.getElementById("username");
+    let email = document.getElementById("email");
+    let password = document.getElementById("password");
+    let cpassword = document.getElementById("cpassword");
+    let male = document.getElementById("male");
+    let female = document.getElementById("female");
+    let gender = male.checked ? "Male" : (female.checked ? "Female" : "");
+    let terms = document.getElementById("terms");
 
-function validateForm(){
+    if (username.value === "" || username.value.length < 4) {
+        alert("Username must be filled and at least 4 characters!");
+        return false;
+    } else if (!email.value.endsWith("@gmail.com") && !email.value.endsWith("@yahoo.com")) {
+        alert("Email must end with @gmail.com or @yahoo.com!");
+        return false;
+    } else if (!isAlphaNumeric(password.value)) {
+        alert("Password must be alphanumeric!");
+        return false;
+    } else if (password.value.length < 15) {
+        alert("Password must be at least 15 characters!");
+        return false;
+    } else if (cpassword.value === "") {
+        alert("Please confirm your password!");
+        return false;
+    } else if (password.value !== cpassword.value) {
+        alert("Passwords do not match!");
+        return false;
+    } else if (!male.checked && !female.checked) {
+        alert("Please select a gender!");
+        return false;
+    } else if (!terms.checked) {
+        alert("You must accept the terms and conditions!");
+        return false;
+    } else {
+        alert("Form successfully submitted!");
 
-    let username=document.getElementById("username").value 
-    let email=document.getElementById("email").value
-    let password=document.getElementById("password").value
-    let cpassword=document.getElementById("cpassword").value
-    let female=document.getElementById("female")
-    let male=document.getElementById("male")
-    let terms=document.getElementById("terms")
+        let userData = {
+            email: email.value,
+            password: password.value,
+            gender: gender
+        };
+        localStorage.setItem("registeredUser", JSON.stringify(userData));
 
-   if(username==""||username.length<4){
-    alert("Username must be filled and more than 4 characters")
-   }else if (!email.endsWith("@gmail.com")){
-    alert ("Email must end with @gmail.com")
-   }else if (!isAlphaNumeric(password)){
-    alert("Password must be alphanumeric")
-   }else if (password != cpassword){
-    alert("Password and confirm password has to match")
-   }else if (!female.checked && !male.checked){
-    alert("Please select a gender")
-   }else if (!terms.checked){
-    alert("Please agree to the term and condition")
-   }
-   else{
-    alert("form sucessfully submitted")
-   }
-   //buat submit formnya
-   document.querySelector("form").submit()
-}
+        let registArray = [username.value, email.value, password.value, gender];
 
-function isAlphaNumeric (str){
-    let isAlpha=false
-    let isNumeric=false
+        console.log(registArray)
 
-    for(let i=0;i<str.length;i++){
-        if(isNaN(str[i])){
-            isAlpha=true;
-        }
-        else{
-            isNumeric=true;
-        }
-    
-        if (isAlpha && isNumeric){
-            return true
-        }
-    
+        window.location.href = "../html/Login.html";
     }
-    return false
 }
 
+function isAlphaNumeric(str) {
+    let hasAlpha = false;
+    let hasNumeric = false;
 
-
-
+    for (let i = 0; i < str.length; i++) {
+        if (isNaN(str[i])) {
+            hasAlpha = true;
+        } else {
+            hasNumeric = true;
+        }
+        if (hasAlpha && hasNumeric) {
+            return true;
+        }
+    }
+    return false;
+}
