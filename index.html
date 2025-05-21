@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <script src="/js/home.js"></script>
 </head>
 
 <body>
@@ -55,8 +56,8 @@
             </div>
             <div class="col-lg-6 mx-auto">
                 <p class="lead mb-4 fw-bold">Menghadirkan kebahagiaan pada satu waktu</p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-2">
-                    <button type="button" class="btn-lg px-4 me-sm-3 btn-hero">Eksplor Lebih Lanjut</button>
+                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-2">
+                   <button type="button" class="btn-lg px-4 me-sm-3 btn-hero" onclick="scrollToSection()">Eksplor Lebih Lanjut</button>
                 </div>
                 <div class="overflow-hidden" style="min-height: 30vh;">
                     <div class="container px-5"> <img
@@ -127,7 +128,7 @@
                 <h1 class="display-5 fw-bold text-start">Produk</h1>
                 <h1 class="display-5 fw-bold text-start hero-2-title">Terbaik</h1>
                 <h1 class="display-5 fw-bold text-start">Kami</h1>
-                <p class="more-detail fs-6 align-self-center ms-auto">Lebih banyak produk</p>
+                <p class="more-detail fs-6 align-self-center ms-auto"><a class="more-detail fs-6 align-self-center ms-auto" href="/html/product.html">Lebih banyak produk</a></p>
             </div>
             <div class="container-sm row gap-5 justify-content-center">
                 <div class="card" style="width: 18rem;">
@@ -136,25 +137,25 @@
                         <h5 class="card-title">Pandan Bloom Basket</h5>
                         <p class="card-text">Bolu pandan lembut dan keju premium, pelukan manis untuk yang tercinta.</p>
                         <h6>Rp 300.000</h6>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/Home/Hampers 4.png" class="card-img-top mt-3" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Cookie Stack Suitcase</h5>
-                        <p class="card-text">Tumpukan cookies manis dalam koper cantik—bahagia dalam tiap gigitan.</p>
-                        <h6>Rp 350.000</h6>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="./html/product-detail.html?product=pandan-bloom-basket" class="btn btn-primary">Go to Product Detail</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <img src="./assets/Home/Hampers 5.png" class="card-img-top mt-3" alt="...">
                     <div class="card-body">
+                        <h5 class="card-title">Cookie Stack Suitcase</h5>
+                        <p class="card-text">Tumpukan cookies manis dalam koper cantik—bahagia dalam tiap gigitan.</p>
+                        <h6>Rp 350.000</h6>
+                        <a href="./html/product-detail.html?product=cookie-stack-suitcase" class="btn btn-primary">Go to Product Detail</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/Home/Hampers 4.png" class="card-img-top mt-3" alt="...">
+                    <div class="card-body">
                         <h5 class="card-title">Fusion Treats</h5>
                         <p class="card-text">Cheesecake klasik dan cokelat berpadu, seperti cinta dalam harmoni.</p>
                         <h6>Rp 400.000</h6>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="./html/product-detail.html?product=fusion-treat" class="btn btn-primary">Go to Product Detail</a>
                     </div>
                 </div>
             </div>
