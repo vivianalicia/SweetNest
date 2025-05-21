@@ -28,10 +28,8 @@ function validateForm() {
     } else {
         alert("Form successfully submitted");
         
-        // Get gender value
         let gender = male.checked ? "Male" : "Female";
-        
-        // Store user data in localStorage
+
         let userData = {
             username: username,
             email: email,
@@ -40,13 +38,11 @@ function validateForm() {
         };
         localStorage.setItem("registeredUser", JSON.stringify(userData));
         
-        // Log the registration array
         let registArray = [username, email, password, gender];
         console.log(registArray);
         
-        // Redirect to login page
         window.location.href = "/html/login.html";
-        return false; // Prevent default form submission since we're handling the redirect
+        return false; 
     }
 }
 
