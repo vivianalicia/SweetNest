@@ -8,25 +8,25 @@ function validateForm() {
     let terms = document.getElementById("terms");
 
     if (username == "" || username.length < 4) {
-        alert("Username must be filled and more than 4 characters");
+        alert("Username harus diisi dan lebih dari 4 karakter");
         return false;
     } else if (!email.endsWith("@gmail.com")) {
-        alert("Email must end with @gmail.com");
+        alert("Email harus diakhiri dengan @gmail.com");
         return false;
     } else if (!isAlphaNumeric(password) || password.length < 10) {
-        alert("Password must be alphanumeric and more than 10 characters");
+        alert("Kata sandi harus berupa alfanumerik dan lebih dari 10 karakter");
         return false;
     } else if (password != cpassword) {
-        alert("Password and confirm password has to match");
+        alert("Kata sandi dan konfirmasi kata sandi harus sama");
         return false;
     } else if (!female.checked && !male.checked) {
-        alert("Please select a gender");
+        alert("Silakan pilih jenis kelamin");
         return false;
     } else if (!terms.checked) {
-        alert("Please agree to the term and condition");
+        alert("Silakan setujui syarat dan ketentuan");
         return false;
     } else {
-        alert("Form successfully submitted");
+        alert("Formulir berhasil dikirim");
         
         let gender = male.checked ? "Male" : "Female";
 

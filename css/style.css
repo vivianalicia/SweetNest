@@ -104,4 +104,5 @@ html {
 }
 footer{
     background-color: #f4e9ff;
+    z-index: -1;
 }
