@@ -84,3 +84,18 @@ html{
     font-weight: 950;
     color: #906EB2;
 }
+
+.custom-upload-btn {
+    background-color: #906EB2;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.custom-upload-btn:hover {
+    background-color: #7a59a0;
+}
