@@ -2,7 +2,6 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
   font-family: "Baloo 2", sans-serif;
 }
 
@@ -22,7 +21,6 @@ ul {
     background-color: #f3e6ff;
     box-shadow: none;
     position: relative;
-    padding: 15px 0;
     width: 100%;
 }
 
@@ -41,7 +39,7 @@ ul {
 }
 
 .logo i {
-    color: #9c6fb0;
+    color: #906eb2;
     margin-right: 8px;
 }
 
@@ -59,7 +57,7 @@ ul {
 }
 
 .nav-links a:hover {
-    color: #9c6fb0;
+    color: #906eb2;
 }
 
 .nav-links a.active {
@@ -163,7 +161,7 @@ margin-bottom: 40px;
 }
 
 .thetitle h2 {
-    color: #8e44ad;
+    color: #906eb2;
     font-size: 2rem;
     padding: 10px;
     background-color: rgba(200, 100, 255, 0.1);
@@ -471,13 +469,13 @@ font-size: 1.2rem;
     font-weight: 600;
     transition: all 0.3s;
     display: inline-block;
-    color: #8e44ad;
+    color: #9c6fb0;
     background-color: white;
 }
 
 .btn-secondary {
     background-color: #fff;
-    color: #8e44ad;
+    color: #9c6fb0;
     
 }
 
@@ -508,7 +506,13 @@ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   font-size: 24px;
   display: inline-block;
 }
-
+footer{
+    background-color: #9c6fb0;
+    color: white;
+}
+footer svg{
+    color: white;
+}
 /* Responsive Styles */
 @media (max-width: 992px) {
     .story-content {
