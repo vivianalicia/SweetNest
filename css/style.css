@@ -117,3 +117,26 @@ footer{
 .carousel-item .row{
     height: 260px !important;
 }
+.fade-section{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+  will-change: opacity, transform;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card:hover{
+    transform: scale(1.05); 
+    box-shadow: 0px 0px 20px #906EB2; 
+    z-index: 3; 
+    color: black;
+    border-style: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card .btn:hover{
+    background-color: #f4e9ff !important;
+    color: black;
+}
