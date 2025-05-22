@@ -11,3 +11,14 @@
 .card{
     background-color: #f2f2f7 !important;
 }
+.fade-section{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+  will-change: opacity, transform;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
