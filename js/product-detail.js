@@ -126,3 +126,13 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("product-name").textContent = "Produk tidak ditemukan.";
     }
 });
+function goToProfile(event) {
+  event.preventDefault();
+  const loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
+  if(loggedInUser){
+    window.location.href="../html/profile.html"
+  }
+  else{
+     window.location.href="../html/registration.html"
+  }
+}

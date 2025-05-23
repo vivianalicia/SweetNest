@@ -39,7 +39,7 @@
                 </ul>
             </div>
             <div class="profile">
-                <a href="../html/profile.html"><img id="navProfileImg" src="../assets/navbar/profile.png" alt=""></a>
+                <a href="../html/profile.html"onclick="goToProfile(event)"><img id="navProfileImg" src="../assets/navbar/profile.png" alt=""></a>
             </div>
         </div>
     </nav>
@@ -212,6 +212,16 @@
     }
   }
 });
+function goToProfile(event) {
+  event.preventDefault();
+  const loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
+  if(loggedInUser){
+    window.location.href="../html/profile.html"
+  }
+  else{
+     window.location.href="../html/registration.html"
+  }
+}
 </script>
 <footer class="pb-2">
     <div class="container-sm">

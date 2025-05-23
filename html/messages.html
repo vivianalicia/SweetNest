@@ -37,7 +37,7 @@
                 </ul>
             </div>
             <div class="profile">
-                <a href="../html/profile.html"><img id="navProfileImg" src="../assets/navbar/profile.png" alt=""></a>
+                <a href="../html/profile.html"onclick="goToProfile(event)"><img id="navProfileImg" src="../assets/navbar/profile.png" alt=""></a>
             </div>
         </div>
     </nav>
@@ -164,7 +164,18 @@
         </div>
     </div>
 </body>
-<script src="/js/home.js"></script>
+<script src="/js/home.js">
+    function goToProfile(event) {
+  event.preventDefault();
+  const loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
+  if(loggedInUser){
+    window.location.href="../html/profile.html"
+  }
+  else{
+     window.location.href="../html/registration.html"
+  }
+}
+</script>
 <footer class="">
     <div class="container-sm py-5">
         <footer class="d-flex flex-wrap justify-content-between align-items-center border-top">

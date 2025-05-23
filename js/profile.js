@@ -3,10 +3,12 @@ const profileImg = document.getElementById('profile-pict');
 const navProfileImg = document.getElementById('navProfileImg');
 
     document.addEventListener("DOMContentLoaded", function(e) {
-    const loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));  
+    const loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
+    navProfileImg.src=loggedInUser.pic;  
     if (loggedInUser && loggedInUser.pic) {  
         profileImg.src = loggedInUser.pic;
         navProfileImg.src = e.target.result;
+        navProfileImg.src=loggedInUser.pic;
     }
 });
     
@@ -18,7 +20,6 @@ const navProfileImg = document.getElementById('navProfileImg');
             reader.onload = function (e) {
                 profileImg.src = e.target.result;
                 navProfileImg.src = e.target.result; 
-
                 let loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
                 if (loggedInUser) {
                     loggedInUser.pic = e.target.result;
@@ -28,7 +29,7 @@ const navProfileImg = document.getElementById('navProfileImg');
                     const index = users.findIndex(u => u.username === loggedInUser.username);  
                     if (index !== -1) {
                         users[index].pic = e.target.result;
-                          sessionStorage.setItem("users", JSON.stringify(users)); 
+                        sessionStorage.setItem("users", JSON.stringify(users)); 
                     }
                 }
             }
@@ -36,4 +37,14 @@ const navProfileImg = document.getElementById('navProfileImg');
             reader.readAsDataURL(file);
         }
     });
-    
+    function goToProfile(event) {
+  event.preventDefault();
+  const loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
+  if(loggedInUser){
+    window.location.href="../html/profile.html"
+     navProfileImg.src = loggedInUser.pic;
+  }
+  else{
+     window.location.href="../html/registration.html"
+  }
+}
