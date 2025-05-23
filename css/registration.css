@@ -7,8 +7,6 @@
 
 }
 
-
-
 .registration-page{
     width: fit-content;
     min-height: fit-content;
@@ -43,7 +41,6 @@ border-radius: 10px;
 }
 .form-registration label {
   display: block;
-  margin-bottom: 8px;
   font-weight: 500;
   color: #333;
 }
@@ -53,14 +50,20 @@ border-radius: 10px;
 .form-registration input[type="password"] {
   width: 25vw !important;
   padding: 10px 12px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 16px;
   transition: border-color 0.2s;
 
 }
-
+.inlining-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
 .form-registration input[type="text"]:focus,
 .form-registration input[type="email"]:focus,
 .form-registration input[type="password"]:focus {
@@ -69,11 +72,8 @@ border-radius: 10px;
   box-shadow: 0 0 0 2px rgba(156, 111, 176, 0.2);
 }
 
-.form-registration input[type="radio"],
 .form-registration input[type="checkbox"] {
-  margin-right: 8px;
   accent-color: #9c6fb0;
-  margin-bottom: 5px;
 }
 
 .form-registration button {
@@ -95,11 +95,14 @@ border-radius: 10px;
 .form-registration button:hover {
   background-color: #8a5a9e;
 }
+.invalid-feedback{
+    display: none;
+}
 
 .inlining{
 display: flex;
+flex-direction: column;
 width: 100%;
-gap: 15px;
 }
 
 .inlining2{

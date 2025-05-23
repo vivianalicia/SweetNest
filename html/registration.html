@@ -23,29 +23,39 @@
                 <form action="login.html" method="post" onsubmit="return validateForm()">
                  <label for="username">Username: </label> 
                     <input type="text" name="username" id="username" placeholder="username">
+                    <div  id="usernameError" class="invalid-feedback">Username harus diisi dan lebih dari 4 karakter</div>
                  <br>
 
                  <label for="email">Email: </label>
                     <input type="text" name="email" id="textmail" placeholder="juanda@gmail.com">
+                    <div id="emailError" class="invalid-feedback">Email harus diakhiri dengan @gmail.com</div>
                  <br>
 
                  <label for="password">Password: </label>
                     <input type="password" name="password" id="password" placeholder="at least 15 characters">
+                    <div id="passwordError" class="invalid-feedback">Kata sandi harus berupa alfanumerik dan lebih dari 10 karakter</div>
                  <br>
 
                  <label for="cpassword">Confirm Password: </label>
                     <input type="password" name="cpassword" id="cpassword" placeholder="">
+                    <div id="cPasswrodError" class="invalid-feedback">Kata sandi dan konfirmasi kata sandi harus sama</div>
                  <br>
 
                  <div class="inlining">
-                    Gender: <input type="radio" name="Gender" id="male"> <label for="Male">Male</label> 
-                    <input type="radio" name="Gender" id="female"> <label for="Female">Female</label>
+                    Gender: 
+                    <div class="inlining-input">
+                        <input type="radio" name="Gender" id="male"> 
+                        <label for="Male">Male</label> 
+                        <input type="radio" name="Gender" id="female"> 
+                        <label for="Female">Female</label>
+                    </div>
+                    <br>
+                    <div id="genderError" class="invalid-feedback">Silakan pilih jenis kelamin</div>
                 </div>
                 <br>
-
-
                 <div class="inlining2">
                     <input type="checkbox" name="terms" id="terms"> <label for="terms">Accept Terms and Condition</label>
+                     <div id="checkboxError" class="invalid-feedback">Silakan setujui syarat dan ketentuan</div>
                 </div>
                     <button type="submit">Submit</button>
                 <br>

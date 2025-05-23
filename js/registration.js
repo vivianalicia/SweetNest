@@ -6,28 +6,33 @@ function validateForm() {
     let female = document.getElementById("female");
     let male = document.getElementById("male");
     let terms = document.getElementById("terms");
-
+    let usernameError = document.getElementById("usernameError");
+    let emailError = document.getElementById("emailError");
+    let passwordError = document.getElementById("passwordError");
+    let cPasswrodError = document.getElementById("cPasswrodError");
+    let genderError = document.getElementById("genderError");
+    let checkboxError = document.getElementById("checkboxError");
+    const errorDivs = document.querySelectorAll(".error-message");
+    errorDivs.forEach(div => div.style.display = "none");
     if (username == "" || username.length < 4) {
-        alert("Username harus diisi dan lebih dari 4 karakter");
+        usernameError.style.display = "block";
         return false;
     } else if (!email.endsWith("@gmail.com")) {
-        alert("Email harus diakhiri dengan @gmail.com");
+        emailError.style.display = "block";
         return false;
     } else if (!isAlphaNumeric(password) || password.length < 10) {
-        alert("Kata sandi harus berupa alfanumerik dan lebih dari 10 karakter");
+        passwordError.style.display = "block";
         return false;
     } else if (password != cpassword) {
-        alert("Kata sandi dan konfirmasi kata sandi harus sama");
+        cPasswrodError.style.display = "block";
         return false;
     } else if (!female.checked && !male.checked) {
-        alert("Silakan pilih jenis kelamin");
+        genderError.style.display = "block";
         return false;
     } else if (!terms.checked) {
-        alert("Silakan setujui syarat dan ketentuan");
+        checkboxError.style.display = "block";
         return false;
     } else {
-        alert("Formulir berhasil dikirim");
-        
         let gender = male.checked ? "Male" : "Female";
 
         let userData = {
