@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo 2", sans-serif;
+    font-optical-sizing: auto; 
+    font-style: normal;
+}
+form label{
+    font-weight: 500;
+    color: #333;
+    font-weight: 500;
+}
+form input, form textarea{
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+form input:focus, form textarea:focus, form button:focus{
+    border-color: #9c6fb0;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(156, 111, 176, 0.2);
+}
+form button{
+    background-color: #9c6fb0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+form button:hover{
+    background-color: #8a5a9e;
+}
