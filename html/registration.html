@@ -20,9 +20,9 @@
          <img src="/assets/Logo.png" alt="Logo SweetNest" class="img-fluid">
             <h1 class="registration-h1">Registration</h1>
              <div class="form-registration">
-                <form action="login.html" method="post" onsubmit="return validateForm()">
+                <form action="./login.html" onsubmit="return validateForm()">
                  <label for="username">Username: </label> 
-                    <input type="text" name="username" id="username" placeholder="username">
+                    <input type="text" name="username" id="username" placeholder="Username">
                     <div  id="usernameError" class="invalid-feedback">Username harus diisi dan lebih dari 4 karakter</div>
                  <br>
 
@@ -32,11 +32,11 @@
                  <br>
 
                  <label for="password">Password: </label>
-                    <input type="password" name="password" id="password" placeholder="at least 15 characters">
-                    <div id="passwordError" class="invalid-feedback">Kata sandi harus berupa alfanumerik dan lebih dari 10 karakter</div>
+                    <input type="password" name="password" id="password" placeholder="paling sedikit 8 karakter">
+                    <div id="passwordError" class="invalid-feedback">Kata sandi harus berupa alfanumerik dan lebih dari 7 karakter</div>
                  <br>
 
-                 <label for="cpassword">Confirm Password: </label>
+                 <label for="cpassword">Konfirmasi Password: </label>
                     <input type="password" name="cpassword" id="cpassword" placeholder="">
                     <div id="cPasswrodError" class="invalid-feedback">Kata sandi dan konfirmasi kata sandi harus sama</div>
                  <br>
@@ -45,16 +45,16 @@
                     Gender: 
                     <div class="inlining-input">
                         <input type="radio" name="Gender" id="male"> 
-                        <label for="Male">Male</label> 
+                        <label for="Male">Laki-Laki</label> 
                         <input type="radio" name="Gender" id="female"> 
-                        <label for="Female">Female</label>
+                        <label for="Female">Perempuan</label>
                     </div>
                     <br>
                     <div id="genderError" class="invalid-feedback">Silakan pilih jenis kelamin</div>
                 </div>
                 <br>
                 <div class="inlining2">
-                    <input type="checkbox" name="terms" id="terms"> <label for="terms">Accept Terms and Condition</label>
+                    <input type="checkbox" name="terms" id="terms"> <label for="terms">Saya Setuju dengan syarat dan ketentuan</label>
                      <div id="checkboxError" class="invalid-feedback">Silakan setujui syarat dan ketentuan</div>
                 </div>
                     <button type="submit">Submit</button>

@@ -12,15 +12,18 @@ function validateForm() {
     let cPasswrodError = document.getElementById("cPasswrodError");
     let genderError = document.getElementById("genderError");
     let checkboxError = document.getElementById("checkboxError");
+
     const errorDivs = document.querySelectorAll(".error-message");
+    let users = JSON.parse(sessionStorage.getItem("users") || "[]");
     errorDivs.forEach(div => div.style.display = "none");
+
     if (username == "" || username.length < 4) {
         usernameError.style.display = "block";
         return false;
     } else if (!email.endsWith("@gmail.com")) {
         emailError.style.display = "block";
         return false;
-    } else if (!isAlphaNumeric(password) || password.length < 10) {
+    } else if (!isAlphaNumeric(password) || password.length < 8) {
         passwordError.style.display = "block";
         return false;
     } else if (password != cpassword) {
@@ -39,14 +42,13 @@ function validateForm() {
             username: username,
             email: email,
             password: password,
-            gender: gender
+            gender: gender,
+            feedback: "",
+            pic: ""
         };
-        localStorage.setItem("registeredUser", JSON.stringify(userData));
-        
-        let registArray = [username, email, password, gender];
-        console.log(registArray);
-        
-        window.location.href = "/html/login.html";
+        users.push(userData);
+        sessionStorage.setItem("users", JSON.stringify(users));
+        window.location.href = "../html/login.html";
         return false; 
     }
 }

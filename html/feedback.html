@@ -36,7 +36,7 @@
                 </ul>
             </div>
             <div class="profile">
-                <a href="../html/profile.html"><img src="../assets/navbar/profile.png" alt=""></a>
+                <a href="../html/profile.html"><img id="navProfileImg" src="../assets/navbar/profile.png" alt=""></a>
             </div>
         </div>
     </nav>
@@ -63,6 +63,17 @@
     </div>
 </body>
 <script src="../js/transition.js"></script>
+<script>
+      document.addEventListener("DOMContentLoaded", function () {
+  const loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
+  if (loggedInUser && loggedInUser.pic) {
+    const navProfileImg = document.getElementById("navProfileImg");
+    if (navProfileImg) {
+      navProfileImg.src = loggedInUser.pic;
+    }
+  }
+});
+</script>
 <footer class="pb-2 pt-2">
     <div class="container-sm">
         <footer class="d-flex flex-wrap justify-content-between align-items-center border-top">

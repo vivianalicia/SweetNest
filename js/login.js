@@ -11,20 +11,21 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        const storedData = JSON.parse(localStorage.getItem("registeredUser"));
-
+        const storedData = JSON.parse(sessionStorage.getItem("users") || "[]");
+        const matchedUser = storedData.find(user => user.username === usernameInput && user.password == passwordInput);
         if (!storedData) {
             alert("Tidak ditemukan pengguna terdaftar. Silakan daftar terlebih dahulu.");
             return;
         }
 
-        if (usernameInput === storedData.username && passwordInput === storedData.password) {
+        if (matchedUser) {
             alert("Login berhasil!");
+            //menyimpan agar bisa dipakai dihalaman feedback
+            sessionStorage.setItem("loggedInUser", JSON.stringify(matchedUser));
             window.location.href = "../index.html";  // sesuaikan halaman setelah login
         } else {
             alert("Username atau kata sandi salah.");
         }
 
-        console.log("Stored data:", storedData);
     });
 });

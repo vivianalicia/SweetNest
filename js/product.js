@@ -9,3 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+  document.addEventListener("DOMContentLoaded", function () {
+  const loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
+  if (loggedInUser && loggedInUser.pic) {
+    const navProfileImg = document.getElementById("navProfileImg");
+    if (navProfileImg) {
+      navProfileImg.src = loggedInUser.pic;
+    }
+  }
+});
