@@ -38,3 +38,23 @@ form button{
 form button:hover{
     background-color: #8a5a9e;
 }
+body{
+    background: linear-gradient(to bottom, #f4e9ff, #ffffff);
+}
+h1{
+    color: #906eb2;
+}
+a{
+    text-decoration: none;
+    color: #f3b4b0;
+}
+.fade-section{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+  will-change: opacity, transform;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);

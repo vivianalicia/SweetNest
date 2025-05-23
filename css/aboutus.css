@@ -4,7 +4,9 @@
   padding: 0px;
   font-family: "Baloo 2", sans-serif;
 }
-
+p{
+    margin: 0px;
+}
 
 a {
     text-decoration: none;
@@ -155,6 +157,7 @@ section {
 .thetitle{
 padding: 5px;
 display: flex;
+flex-direction: column;
 align-items: center;
 justify-content: center;
 margin-bottom: 40px;
@@ -171,8 +174,7 @@ margin-bottom: 40px;
 
 .sweetnest-emoji-separator {
   text-align: center;
-  padding: 30px 0;
-  margin: 20px 0;
+  margin: 10px 0;
   display: block;
   width: 100%;
   clear: both;
@@ -291,6 +293,7 @@ object-fit: cover;
     background-color: #fff;
     position: relative;
     z-index: 1;
+    padding-top:50px;
 }
 
 .values-cards {
@@ -298,6 +301,18 @@ object-fit: cover;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+}
+.hero-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.hero-title img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 70px;
 }
 
 .value-card {
@@ -386,7 +401,7 @@ object-fit: cover;
     padding: 15px;
     text-align: center;
     color: #fff;
-    background: linear-gradient(135deg, #ff9966, #ff6699);
+    background: linear-gradient(135deg, #f4bcb4,#cc9cf4);
 }
 
 .team-info h3 {
@@ -404,19 +419,29 @@ object-fit: cover;
 /*Journey*/
 .years{
 display: flex;
+flex-direction: row;
 gap: 2rem;
 padding: 10px;
+justify-content: center;
+align-items: center;
 }
 
 .tahun{
-width: 70%;
-font-size: 1.8rem;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+.tahun h3{
+    font-size: 3rem;
 font-weight: bold;
+width: fit-content;
 }
 
 .years p{
 width: 100%;
 font-size: 1.2rem;
+justify-self: center;
+
 }
 
 .background-wrapper2 {
@@ -476,12 +501,14 @@ font-size: 1.2rem;
 .btn-secondary {
     background-color: #fff;
     color: #9c6fb0;
-    
+}
+.btn-secondary:hover{
+    background-color: #72598b !important;
 }
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(72,131,214, 0.1) !important;
 }
 
 .btn-shop .btnsecondary{
@@ -525,7 +552,7 @@ footer svg{
   transform: translateY(0);
 }
 /* Responsive Styles */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .story-content {
         flex-direction: column;
         text-align: center;
@@ -534,9 +561,6 @@ footer svg{
     .story-image {
         margin-bottom: 20px;
     }
-}
-
-@media (max-width: 768px) {
     .nav-links {
         position: absolute;
         top: 70px;
@@ -570,9 +594,6 @@ footer svg{
     .footer-content {
         flex-direction: column;
     }
-}
-
-@media (max-width: 480px) {
     .hero h1 {
         font-size: 2rem;
     }
@@ -592,5 +613,76 @@ footer svg{
     
     .btn {
         width: 100%;
+    }
+    .years{
+        flex-direction: column !important;
+    }
+}
+
+
+@media (min-width: 768px) and(max-width: 1024px) {
+        .story-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .story-image {
+        margin-bottom: 20px;
+    }
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+    
+    .nav-links.show {
+        display: flex;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .values-cards, .team-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .value-card, .team-card {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    section {
+        padding: 40px 0;
+    }
+    
+    .story-content {
+        padding: 20px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    .years{
+        flex-direction: column !important;
     }
 }
