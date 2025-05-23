@@ -18,3 +18,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+function goToProfile(event) {
+  event.preventDefault();
+  const loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
+  if(loggedInUser){
+    window.location.href="../html/profile.html"
+     navProfileImg.src = loggedInUser.pic;
+  }
+  else{
+     window.location.href="../html/registration.html"
+  }
+}
