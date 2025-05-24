@@ -5,6 +5,13 @@
     font-optical-sizing: auto; 
     font-style: normal;
 }
+h1{
+   color: #906eb2 !important;
+}
+p a{
+    text-decoration: none !important;
+    color: #f3b4b0 !important;
+}
 .card-title{
     color: #906eb2 !important;
 }
