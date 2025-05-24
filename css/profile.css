@@ -100,3 +100,16 @@ html{
 .custom-upload-btn:hover {
     background-color: #7a59a0;
 }
+.email-content, .gender-content{
+    gap: 20px !important;
+    padding: 5px;
+}
+.email-content h5{
+    font-weight: bold;
+}
+.gender-content h5{
+    color: gray;
+}
+#nama{
+    font-weight: bolder;
+}
