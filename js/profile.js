@@ -1,7 +1,9 @@
 const uploadInput = document.getElementById('upload-photo');
 const profileImg = document.getElementById('profile-pict');
 const navProfileImg = document.getElementById('navProfileImg');
-
+const nameEl = document.getElementById("nama");
+const emailEl = document.getElementById("email");
+const genderEl = document.getElementById("gender");
     document.addEventListener("DOMContentLoaded", function(e) {
     const loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
     navProfileImg.src=loggedInUser.pic;  
@@ -9,6 +11,12 @@ const navProfileImg = document.getElementById('navProfileImg');
         profileImg.src = loggedInUser.pic;
         navProfileImg.src = e.target.result;
         navProfileImg.src=loggedInUser.pic;
+    console.log(document.getElementById("userName")); // harusnya bukan null
+    }
+    if(loggedInUser){
+        nameEl.textContent = loggedInUser.username;
+        genderEl.textContent = loggedInUser.gender;
+        emailEl.textContent = loggedInUser.email;
     }
 });
     
@@ -37,12 +45,13 @@ const navProfileImg = document.getElementById('navProfileImg');
             reader.readAsDataURL(file);
         }
     });
-    function goToProfile(event) {
+function goToProfile(event) {
   event.preventDefault();
   const loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
   if(loggedInUser){
     window.location.href="../html/profile.html"
-     navProfileImg.src = loggedInUser.pic;
+    navProfileImg.src = loggedInUser.pic;
+
   }
   else{
      window.location.href="../html/registration.html"

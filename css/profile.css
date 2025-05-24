@@ -78,12 +78,6 @@ html{
     align-items: center;
 }
 
-.profile-content h1 {
-    font-size: 3rem;
-    font-weight: 950;
-    color: #906EB2;
-}
-
 .custom-upload-btn {
     background-color: #906EB2;
     color: white;
@@ -110,6 +104,9 @@ html{
 }
 #nama{
     font-weight: bolder;
+    color: black;
+    margin: 10px;
+    opacity: 100%;
 }
 @media screen and (max-width: 768px) {
     .profile-img{
