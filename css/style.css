@@ -105,17 +105,20 @@ img{
   position: relative; /* Penting agar tombol posisinya relatif ke carousel */
 }
 .carousel-button-group{
-    position: absolute;
-    bottom: 155%;
-    left: 85%;
+    margin-left: auto;
+}
+.carousel-button-group button:hover{
+    background-color: #f4e9ff;
+    border-radius: 100%;
+}
+.carousel-inner{
+    height: fit-content !important;
 }
 .custom-carousel-btn{
     background-color: #ffff;
     border: none;
 }
-.carousel-item{
-    height: 50vh !important;
-}
+
 .line{
     background-color: black;
     width: 100%;
@@ -126,7 +129,10 @@ footer{
     z-index: -1;
 }
 .carousel-item .row{
-    height: 260px !important;
+    height: fit-content !important;
+}
+.testi-desc{
+    height: 220px !important;
 }
 .fade-section{
   opacity: 0;
@@ -134,7 +140,11 @@ footer{
   transition: opacity 1s ease, transform 1s ease;
   will-change: opacity, transform;
 }
-
+.testi-img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
 .fade-section.visible {
   opacity: 1;
   transform: translateY(0);

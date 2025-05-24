@@ -15,6 +15,7 @@ html{
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .header p {
@@ -27,8 +28,6 @@ html{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
-
 }
 
 .inside-header img{
@@ -58,20 +57,20 @@ html{
 
 .profile-img{
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: row;
+    
 }
 
 .profile-img img{
-    margin-left: 20px;
-    margin-right: 70px;
 }
 
 #profile-pict{
     border-radius: 20px;
     width: 400px;
     height: 400px;
+    object-fit: cover;
 }
 .profile-content{
     display: flex;
@@ -112,4 +111,16 @@ html{
 }
 #nama{
     font-weight: bolder;
+}
+@media screen and (max-width: 768px) {
+    .profile-img{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .profile-img{
+        flex-direction: column;
+        gap: 10px;
+    }
 }
