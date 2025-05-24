@@ -42,3 +42,5 @@ function goToProfile(event) {
     }
   }
 });
+const users = JSON.parse(sessionStorage.getItem("users") || "[]");
+console.log(users);

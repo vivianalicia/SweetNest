@@ -41,19 +41,22 @@
         </div>
     </nav>
     <div class="feedback-section fade-section">
-        <div class="form-feedback container pb-3">
-        <div class="py-5 text-center">
-            <img src="../assets/Feedback/feedback-1.svg" class="w-25" alt="">
-            <h1><strong>Masukkan Feedback!</strong></h1>
-            <p class="fs-4 fw-medium"> <a href="">Kritik dan saranmu</a> membuat SweetNest berkembang menjadi lebih baik!</p>
-        </div>
-        <form id="loginForm" class="row p-2">
-          <label for="feedback">Kritik & Saran:</label>
-          <textarea name="feedback" id="feedback" placeholder="feedback"></textarea>
-          <br>
-          <button type="button" id="loginButton" onclick="submitFeedback">Submit</button>
-          <br>
-        </form>
+        <div class="form-feedback container pb-3" id="feedback-form">
+            <div class="py-5 text-center">
+                <img src="../assets/Feedback/feedback-1.svg" class="w-25" alt="">
+                <h1><strong>Masukkan Feedback!</strong></h1>
+                <p class="fs-4 fw-medium"> <a href="">Kritik dan saranmu</a> membuat SweetNest berkembang menjadi lebih baik!</p>
+            </div>
+            <form id="loginForm" class="row p-2">
+            <label for="feedback">Kritik & Saran:</label>
+            <textarea name="feedback" id="feedback" placeholder="feedback"></textarea>
+            <br>
+            <button type="button" id="loginButton" onclick="submitFeedback()">Submit</button>
+            <br>
+            </form>
+      </div>
+      <div id="login-warning" class="pb-3 py-5">
+        <h1 class="text-center"><strong>Mohon Lakukan Login terlebih dahulu!</strong></h1>
       </div>
     </div>
     </div>

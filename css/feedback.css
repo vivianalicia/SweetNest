@@ -48,6 +48,9 @@ a{
     text-decoration: none;
     color: #f3b4b0;
 }
+#login-warning{
+    display: none;
+}
 .fade-section{
   opacity: 0;
   transform: translateY(50px);
