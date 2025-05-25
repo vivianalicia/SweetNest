@@ -29,3 +29,11 @@ p a{
   opacity: 1;
   transform: translateY(0);
 }
+@media screen and (max-width:768px) {
+  .card-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+}
