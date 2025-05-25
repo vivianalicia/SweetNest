@@ -19,26 +19,20 @@
 
 
 #product-image{
-    width: 450px;
-    height: 450px;
+    width: 250px;
+    height: 250px;
     margin-right: 20px;
     border-radius: 20px;
-}
-
-
-#woman-bdcake{
-    width: 400px;
-    
 }
 
 #highlited-lavender{
     color: #906EB2;
 }
 
-
-
-.product-detail h1{
-    font-weight: 950;
+#product-name{
+    font-weight: 500;
+    color: black;
+    font-size: 2rem;
 }
 
 .product-desc{
@@ -46,70 +40,40 @@
     margin-left: 20px;
     margin-right: 20px;
 }
+
+#product-description{
+    font-size: 1rem;
+    color: black;
+    text-align: left;
+}
 .product-desc p{
     font-size: 32px;
     color: #906EB2;
     text-align: justify;
 }
 
-.product-content-2{
-    display: flex;
-    margin-top: 30px;
-    align-items: center;
+.btn-hero{
+    background-color: #906eb2;  
+    color: white;               
+    border: none;
+    padding: 10px 20px;          
+    font-size: 20px;     
 }
-
-.button-overlay {
-    position: relative;
-    display: inline-block;
-    margin-left: auto;
+.btn-hero:hover{
+    transform: scale(1.05); 
+    z-index: 3; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.button-overlay h4 a {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; 
-    z-index: 2;
-}
-
-.button-overlay img {
-    display: block;
-    width: 300px;
+.btn-hero a{
+    color: white;
 }
 
 .price{
     color: #906EB2;
 }
 
-.product-images{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px
 
-}
-
-.product-content-image{
-    width: 400px;
-    height: 400px;
-}
-
-.product-images-container{
-    display: flex;
-    justify-content: center;
-}
-.product-images-container img{
-    width: 400px;
-    height: 400px;
-    margin-top: 20px;
-    margin-left:40px;
-    margin-right: 70px;
-    border-radius: 20px;
-
-}
-
-@media (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .product-content {
         flex-direction: column;
         align-items: center;
@@ -133,28 +97,6 @@
     .product-desc p {
         font-size: 32px;
     }
-    .product-content-2 {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-    .button-overlay img {
-        width: 250px;
-    }
-
-    .button-overlay a{
-        font-size: 16px;
-    }
-
-    .product-images-container {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    .product-images-container img {
-        width: 300px;
-        height: auto;
-        margin: 0 auto;
-    }
 }
 
 
@@ -163,21 +105,8 @@
         font-size: 24px;
     }
     #product-name,
-    .product-images h1,
     .price {
         font-size: 24px;
         text-align: center;
-    }
-    .button-overlay img {
-        width: 200px;
-    }
-
-    .button-overlay a{
-        font-size: 16px;
-    }
-    .product-images-container img {
-        width: 90%;
-        height: auto;
-        margin: 10px auto;
     }
 }

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
          "pandan-bloom-basket": {
             name: "Pandan Bloom Basket",
             price: "Rp. 300.000",
-            description: "Dibalut aroma pandan yang harum dan tekstur bolu yang lembut, setiap potong dari Pandan Bloom Basket seakan membawa pulang kenangan masa kecil. Keju premium yang meleleh di atasnya menambah kesan hangat dan mendalam—sebuah persembahan manis untuk orang tersayang yang pantas mendapatkan yang terbaik.",
+            description: "Pandan Bloom Basket adalah bolu pandan lembut dengan aroma harum dan taburan keju premium yang meleleh, menghadirkan rasa hangat dan nostalgia dalam setiap potongnya.",
             images: [
         "../assets/ProductAssets/Hampers 1.png",
         "../assets/ProductAssets/Hampers 1.png",
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "basque-cheese-galore": {
             name: "Basque Cheesecake",
             price: "Rp. 350.000",
-            description: "Dengan permukaan yang karamelisasi dan lapisan dalam yang lembut serta creamy, Basque Cheesecake Galore hadir sebagai simbol ketulusan dan kemewahan. Rasa keju yang dalam berpadu dengan kelembutan teksturnya menjadikan setiap gigitan bagaikan pelukan hangat di hari-hari penuh cinta.",
+            description: "Basque Cheesecake Galore adalah cheesecake karamel lembut dan creamy dengan rasa keju mendalam, simbol kemewahan dan ketulusan dalam setiap gigitan.",
             images: [
         "../assets/ProductAssets/Hampers 2.png",
         "../assets/ProductAssets/Hampers 2.png",
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "cookie-stack-suitcase": {
             name: "Cookie Stack Suitcase",
             price: "Rp. 350.000",
-            description: "Disusun rapi dalam koper mini eksklusif, tumpukan kue kering ini tak hanya memanjakan lidah, tetapi juga hati. Cookie Stack Suitcase adalah kenangan manis yang bisa dibagikan, atau disimpan diam-diam untuk diri sendiri—karena beberapa kebahagiaan memang pantas dinikmati perlahan.",
+            description: "Cookie Stack Suitcase adalah tumpukan kue kering dalam koper mini eksklusif yang manis dan berkesan, sempurna untuk dibagi atau dinikmati sendiri.",
             images: [
         "../assets/ProductAssets/Hampers 4.png",
         "../assets/ProductAssets/Hampers 4.png",
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "fusion-treat": {
             name: "Fusion Treats",
             price: "Rp. 400.000",
-            description: "Seperti dua hati yang saling melengkapi, Fusion Treat menyatukan dua rasa yang berbeda namun harmonis: cheesecake klasik yang lembut dan cheesecake cokelat yang menggoda. Sajian ini bukan hanya sekadar manis, tapi juga metafora dari cinta yang menyatu dalam perbedaan.",
+            description: "Fusion Treat adalah perpaduan cheesecake klasik dan cokelat yang lembut, manis, dan harmonis—cerminan cinta dalam perbedaan.",
             images: [
         "../assets/ProductAssets/Hampers 3.png",
         "../assets/ProductAssets/Hampers 3.png",
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "sweet-heart-box": {
             name: "Sweet Heart Box",
             price: "Rp. 400.000",
-            description: "Sweet Heart Box adalah wujud cinta dalam bentuk sederhana namun penuh makna. Bolu pandan lembut dalam porsi melimpah disajikan dalam kotak elegan—sempurna untuk mereka yang ingin mengungkapkan kasih sayang lewat manisnya perhatian.",
+            description: "Sweet Heart Box adalah bolu pandan lembut dalam kotak elegan yang menyampaikan kasih sayang lewat kesederhanaan yang bermakna.",
             images: [
         "../assets/ProductAssets/Hampers 5.png",
         "../assets/ProductAssets/Hampers 5.png",
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "nest-layers": {
             name: "Nest Layers",
             price: "Rp. 400.000",
-            description: "Setiap lapisan dalam Nest Layers menyimpan cerita, seperti kenangan yang dibingkai dalam kelembutan spikoe klasik. Aroma rempah yang hangat dan tekstur yang bersatu indah menjadikannya pilihan tepat untuk berbagi rasa cinta, nostalgia, dan kehangatan.",
+            description: "Nest Layers adalah spikoe klasik beraroma rempah hangat dengan lapisan lembut yang menyimpan nostalgia dan kehangatan.",
             images: [
         "../assets/ProductAssets/Hampers 6.png",
         "../assets/ProductAssets/Hampers 6.png",
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "serenade-basket": {
             name: "Serenade Basket",
             price: "Rp. 470.000",
-            description: "Lebih dari sekadar hampers, Serenade Basket adalah lagu cinta dalam bentuk kue. Nastar lembut berisi nanas manis berpadu dengan engagement package yang romantis, menjadikannya pilihan tak terlupakan untuk melamar atau merayakan cinta yang mendalam.",
+            description: "Serenade Basket adalah hampers nastar lembut dan engagement package romantis, sempurna untuk melamar atau merayakan cinta istimewa.",
             images: [
         "../assets/ProductAssets/Hampers 7.jpg",
         "../assets/ProductAssets/Hampers 7.jpg",
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "golden-package": {
             name: "Golden Package",
             price: "Rp. 530.000",
-            description: "Golden Package menyajikan kombinasi klasik dari nastar dan kastengel yang mewah, dibungkus dengan nuansa keemasan yang menggoda. Dilengkapi dengan engagement package eksklusif, ini adalah simbol kemewahan, keseriusan, dan cinta yang ingin tumbuh selamanya.",
+            description: "Golden Package adalah kombinasi nastar dan kastengel premium dalam kemasan keemasan mewah dengan engagement package sebagai simbol cinta yang tulus dan abadi.",
             images: [
         "../assets/ProductAssets/Hampers 8.jpg",
         "../assets/ProductAssets/Hampers 8.jpg",
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "cookie-goodie": {
             name: "Cookie Goodie",
             price: "Rp. 300.000",
-            description: "Pilih tiga dari kue favorit SweetNest dan jadikan Cookie Goodie sebagai tanda cinta yang sederhana tapi penuh arti. Cocok untuk buah tangan, hadiah manis, atau sekadar pengingat bahwa kebahagiaan bisa datang dalam bentuk kue mungil nan lezat.",
+            description: "Cookie Goodie adalah tiga pilihan kue favorit SweetNest dalam satu paket manis yang cocok untuk hadiah, buah tangan, atau kejutan penuh arti.",
             images: [
         "../assets/ProductAssets/Hampers 9.jpg",
         "../assets/ProductAssets/Hampers 9.jpg",
@@ -119,7 +119,6 @@ document.addEventListener("DOMContentLoaded", () => {
         img.src = imgSrc;
         img.alt = product.name;
         img.className = "product-content-image";
-        productImagesContainer.appendChild(img);
     });
 
     } else {
