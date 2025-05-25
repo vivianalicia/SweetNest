@@ -22,15 +22,18 @@
           <label for="username">Username:</label>
           <input type="text" name="username" id="username" placeholder="username" required>
           <br>
+          <div id="usernameError" class="invalid-feedback">Username atau kata sandi salah.</div>
 
           <label for="password">Password:</label>
           <input type="password" name="password" id="password" placeholder="password" required>
           <br>
+          <div id="passwordError" class="invalid-feedback">Username atau kata sandi salah.</div>
 
           <div class="inlining2">
             <input type="checkbox" name="terms" id="terms">
             <label for="terms">Saya Setuju dengan Syarat dan Ketentuan</label>
           </div>
+          <div id="checkboxError" class="invalid-feedback">Silakan setujui syarat dan ketentuan!</div>
 
           <button type="button" id="loginButton">Submit</button>
           <br>

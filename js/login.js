@@ -1,13 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
     const loginButton = document.getElementById("loginButton");
 
+
     loginButton.addEventListener("click", function () {
         const usernameInput = document.getElementById("username").value.trim();
         const passwordInput = document.getElementById("password").value;
         const termsChecked = document.getElementById("terms").checked;
+        let passwordError = document.getElementById("passwordError");
+        let usernameError = document.getElementById("usernameError");
+        let checkboxError = document.getElementById("checkboxError");
+        const errorDivs = document.querySelectorAll(".error-message");
+        errorDivs.forEach(div => div.style.display = "none");
+
 
         if (!termsChecked) {
-            alert("Silakan setujui syarat dan ketentuan!");
+            checkboxError.style.display = "block";
             return;
         }
 
@@ -19,12 +26,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (matchedUser) {
-            alert("Login berhasil!");
             //menyimpan agar bisa dipakai dihalaman feedback
             sessionStorage.setItem("loggedInUser", JSON.stringify(matchedUser));
             window.location.href = "../index.html";  // sesuaikan halaman setelah login
         } else {
-            alert("Username atau kata sandi salah.");
+           passwordError.style.display = "block";
+           usernameError.style.display = "block";
+           return false;
         }
 
     });
