@@ -44,3 +44,22 @@ function goToProfile(event) {
 });
 const users = JSON.parse(sessionStorage.getItem("users") || "[]");
 console.log(users);
+function toggleFAQ(element) {
+    const faqItem = element.parentElement;
+    const faqAnswer = faqItem.querySelector('.faq-answer');
+    const isActive = faqItem.classList.contains('active');
+
+    document.querySelectorAll('.faq-item').forEach(item => {
+        if (item !== faqItem) {
+          item.classList.remove('active');
+          item.querySelector('.faq-answer').classList.remove('active');
+        }
+    });
+    if (isActive) {
+        faqItem.classList.remove('active');
+        faqAnswer.classList.remove('active');
+    } else {
+      faqItem.classList.add('active');
+      faqAnswer.classList.add('active');
+    }
+}

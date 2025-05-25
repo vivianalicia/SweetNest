@@ -125,7 +125,7 @@ img{
     height: 1px;    
 }
 footer{
-    background: linear-gradient(to bottom, #ffffff, #f4e9ff);
+    background: #ffff;
     z-index: -1;
 }
 .carousel-item .row{
@@ -160,4 +160,61 @@ footer{
 .card .btn:hover{
     background-color: #f4e9ff !important;
     color: black;
+}
+ .faq-item {
+    border-bottom: 1px solid #d1c7b8;
+    margin-bottom: 0;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.faq-question:hover {
+    opacity: 0.8;
+}
+.question-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #000000;
+    flex: 1;
+    margin-right: 1rem;
+}
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0;
+}
+
+.faq-answer.active {
+    max-height: 200px;
+    padding-bottom: 1.5rem;
+}
+
+.answer-text {
+    font-size: 0.95rem;
+    color: #202020;
+    line-height: 1.5;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-icon::before {
+    content: "+";
+}
+.FAQ{
+    background: linear-gradient(to bottom, #f4e9ff, #ffffff);
+    padding: 10px;
+    margin-top: 50px;
+}
+.faq-text{
+    color: #906eb2;
 }
