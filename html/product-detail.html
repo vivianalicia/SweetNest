@@ -65,28 +65,8 @@
     </div>
 
     <script src="../js/product-detail.js"></script>
-
 </body>
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-  const loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
-  if (loggedInUser && loggedInUser.pic) {
-    const navProfileImg = document.getElementById("navProfileImg");
-    if (navProfileImg) {
-      navProfileImg.src = loggedInUser.pic;
-    }
-  }
-});
-function goToProfile(event) {
-  event.preventDefault();
-  const loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
-  if(loggedInUser){
-    window.location.href="../html/profile.html"
-  }
-  else{
-     window.location.href="../html/registration.html"
-  }
-}
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
